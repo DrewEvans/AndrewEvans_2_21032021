@@ -56,23 +56,82 @@ main {
 
 section {
     width: 70%;
-    margin-right: 2%;
+    margin: 3% 2% 4% 0;
     background-color: #f2f2f2;
+    border-radius: 15px;
 }
 
-.search-location-container {
+aside {
+    margin: 3% 0 4%;
+    width: 28%;
+    display: flex;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+}
+
+.search-location-container,
+.popular-product-container {
     margin: 3%;
 }
 
 .location-header>h2,
-.popular-product-header,
-.search-result-activities {
+.popular-product-header>h2,
+.search-result-activities>h2 {
+    margin: 1.5rem;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-aside {
-    width: 25%;
+.display-results {
     display: flex;
-    background-color: #f2f2f2
+    justify-content: space-around;
+
+}
+
+#search-cards {}
+
+#search-cards>img {
+    margin: .5em;
+    padding: 0;
+    width: 95%;
+    border-radius: 15px 15px 0 0;
+}
+
+.clickable-search-card {
+    text-decoration: none;
+    display: flex;
+    background-color: white;
+    margin: 1em;
+    padding: 0;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.42);
+}
+
+.search-content>h3 {
+    font-weight: bold;
+    margin: .5em;
+}
+
+.search-content>p {
+    margin: .5em;
+}
+
+.search-content>p>span {
+    font-weight: bold;
+}
+
+.search-content>span {
+    color: #0065fc;
+    margin-left: .3em;
+}
+
+.search-content>span>i:nth-child(5) {
+    color: #DEEBFF;
+    margin-left: .3em;
+}
+
+.search-content {
+    color: black;
+    margin-left: 1em;
 }
