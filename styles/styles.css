@@ -88,22 +88,28 @@ aside {
 
 }
 
-#search-cards {}
+#search-cards {
+    height: 20vh;
+}
 
 #search-cards>img {
-    margin: .5em;
+    margin: 2.5%;
     padding: 0;
     width: 95%;
+    height: 55%;
+    display: flex;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
 .clickable-search-card {
     text-decoration: none;
     display: flex;
+    flex-wrap: wrap;
     background-color: white;
     margin: 1em;
     padding: 0;
-    width: 30%;
+    width: 35%;
     border-radius: 15px;
     box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.42);
 }
@@ -128,10 +134,9 @@ aside {
 
 .search-content>span>i:nth-child(5) {
     color: #DEEBFF;
-    margin-left: .3em;
 }
 
 .search-content {
     color: black;
-    margin-left: 1em;
+    margin-left: .5em;
 }
