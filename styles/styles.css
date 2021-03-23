@@ -3,6 +3,7 @@ body {
     margin: 0 2em 0 2em;
 }
 
+/*Navagation style*/
 nav {
     height: 20%;
     display: flex;
@@ -25,20 +26,26 @@ nav>ul>li {
     text-align: center;
     justify-content: space-between;
     margin: 10px auto;
+
 }
 
 a.nav-links {
     text-decoration: none;
     font-weight: 500;
-    color: #0065fc;
-    transition-delay: 50ms;
+    padding: 0 2em;
+    color: black;
+    transition: color 250ms;
 }
 
 .nav-links:hover {
     font-weight: 600;
+    padding-top: 2.35em;
+    border-top: 2px solid #0065fc;
     color: #0065fc;
+
 }
 
+/*header*/
 .intro {
     margin-bottom: 1.5em;
 }
@@ -49,6 +56,137 @@ a.nav-links {
     margin-bottom: .25em;
 }
 
+.intro>h2 {
+    font-weight: 500;
+    font-size: .8em;
+}
+
+/*search bar*/
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.location-icon {
+    background-color: #f2f2f2;
+    height: 2.1em;
+    width: 2em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.location-icon>span {
+    display: flex;
+    justify-content: center;
+    transform: translateY(.6em);
+}
+
+input[type=search] {
+    color: black;
+    padding: .6em;
+    border: 1px solid #f2f2f2;
+}
+
+.search-button {
+    text-decoration: none;
+    background-color: #0065fc;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-button>span {
+    display: flex;
+    padding: .54em;
+    color: #f2f2f2;
+}
+
+.search-filters {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: bolder;
+    margin-top: 1.5em;
+}
+
+/*filter button style*/
+.filter-button {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.filter-content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.filter-icon {
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    transform: translateX(2em)
+}
+
+.filter-icon>span {
+    display: flex;
+    justify-content: center;
+    transform: translateY(.5em);
+    color: #0065fc;
+}
+
+#filter-name {
+    display: flex;
+    border: 1.5px solid rgb(214, 213, 213);
+    border-radius: 50px;
+    background-color: white;
+}
+
+#filter-name>span {
+    font-size: 1em;
+    margin-left: 1.75em;
+    padding: .4em;
+}
+
+/*information blurb*/
+
+.infos {
+    display: flex;
+    margin-top: 2em;
+}
+
+.infos>p {
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: .4em;
+    margin-left: 2.5em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.circle-border-info {
+    position: absolute;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+}
+
+.circle-border-info>span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center
+}
+
+.fa-info {
+    margin: .32em;
+    color: #0065fc;
+}
+
+
+
+/*Main Content Container placement*/
 main {
     display: flex;
     flex-wrap: wrap;
@@ -56,13 +194,13 @@ main {
 
 section {
     width: 70%;
-    margin: 3% 2% 4% 0;
+    margin: 2% 2% 4% 0;
     background-color: #f2f2f2;
     border-radius: 15px;
 }
 
 aside {
-    margin: 3% 0 4%;
+    margin: 2% 0 4%;
     width: 28%;
     display: flex;
     background-color: #f2f2f2;
@@ -72,6 +210,16 @@ aside {
 .search-location-container,
 .popular-product-container {
     margin: 3%;
+}
+
+.popular-product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-product-header>span {
+    margin-left: 5em;
 }
 
 .location-header>h2,
@@ -85,11 +233,12 @@ aside {
 .display-results {
     display: flex;
     justify-content: space-around;
-
 }
 
+/*clicable product cards for section*/
 #search-cards {
-    height: 20vh;
+    display: inline-block;
+    height: 25vh;
 }
 
 #search-cards>img {
@@ -133,10 +282,54 @@ aside {
 }
 
 .search-content>span>i:nth-child(5) {
+    margin-top: .4em;
     color: #DEEBFF;
 }
 
 .search-content {
     color: black;
-    margin-left: .5em;
+    margin-left: 1em;
+}
+
+.more-results>h4 {
+    margin: 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+
+
+/*footer Navagation*/
+footer {
+    background-color: #DEEBFF;
+    position: absolute;
+    bottom: o;
+    left: 0;
+    right: 0;
+}
+
+.footer-container {
+    display: flex;
+    margin-top: 1.5em;
+    margin-left: 2em;
+    margin-right: 25%;
+    justify-content: space-between;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 667px) and (max-width:1200px) {
+    body {}
+}
+
+@media screen and (max-width:666px) {
+    body {}
 }
