@@ -11,25 +11,29 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/styles/css-reset.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles2.css">
     <title>Reservia</title>
 </head>
 
 <body>
     <nav>
-        <div class="nav-logo">
-            <img src="/images/logo/Reservia.svg" alt="Reservia-logo">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/images/logo/Reservia.svg" alt="Reservia-logo">
+            </div>
+            <ul>
+                <li><a class="nav-links" href="#">Hébergement</a></li>
+                <li><a class="nav-links" href="#">Activités</a></li>
+                <li><a class="subscribe-button" href="#">S'inscrire</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a class="nav-links" href="#">Hébergement</a></li>
-            <li><a class="nav-links" href="#">Activités</a></li>
-            <a class="subscribe-button" href="#">S'inscrire</a>
-        </ul>
     </nav>
     <header>
-        <div class="intro">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h2>En plein centre ville ou en pleine nature</h2>
+        <div class="header-container">
+            <div class="intro">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h2>En plein centre ville ou en pleine nature</h2>
+            </div>
         </div>
         <!--SEARCH BAR-->
         <div class="search-bar">
@@ -57,7 +61,7 @@
                                 <i class="fas fa-money-bill-wave fa-sm"></i>
                             </span>
                         </div>
-                        <div class="filter" id="filter-name">
+                        <div class="filter">
                             <span>Économique</span>
                         </div>
                     </div>
@@ -69,7 +73,7 @@
                                 <i class="fa fa-child"></i>
                             </span>
                         </div>
-                        <div class="filter" id="filter-name">
+                        <div class="filter">
                             <span>Familial</span>
                         </div>
                     </div>
@@ -81,7 +85,7 @@
                                 <i class="fas fa-heart"></i>
                             </span>
                         </div>
-                        <div class="filter" id="filter-name">
+                        <div class="filter">
                             <span>Romantique</span>
                         </div>
                     </div>
@@ -93,7 +97,7 @@
                                 <i class="fas fa-dog fa-sm"></i>
                             </span>
                         </div>
-                        <div class="filter" id="filter-name">
+                        <div class="filter">
                             <span>Animaux autorisés</span>
                         </div>
                     </div>
@@ -117,10 +121,13 @@
                 <div class="location-header">
                     <h2>Hébergement à <span>Marseille</span></h2>
                 </div>
+
                 <div class="product-search-cards">
-                    <a href="#" class="clickable-search-card" id="clickable-search-card">
-                        <div class="card" id="search-cards">
-                            <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                    <div class="search-card">
+                        <a href="#" class="clickable-search-card">
+                            <div class="search-img-container">
+                                <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                            </div>
                             <div class="search-content">
                                 <h3 class="product-name">Auberge la Canebière</h3>
                                 <p class="product-cost">Nuit à partir de <span>25€</span></p>
@@ -132,11 +139,14 @@
                                     <i class="fas fa-star"></i>
                                 </span>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#" class="clickable-search-card" id="clickable-search-card">
-                        <div class="card" id="search-cards">
-                            <img src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="search-card">
+                        <a href="#" class="clickable-search-card">
+                            <div class="search-img-container">
+                                <img src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                            </div>
                             <div class="search-content">
                                 <h3 class="product-name">Hôtel du Port</h3>
                                 <p class="product-cost">Nuit à partir de <span>52€</span></p>
@@ -148,11 +158,14 @@
                                     <i class="fas fa-star"></i>
                                 </span>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#" class="clickable-search-card" id="clickable-search-card">
-                        <div class="card" id="search-cards">
-                            <img src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="search-card">
+                        <a href="#" class="clickable-search-card">
+                            <div class="search-img-container">
+                                <img src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                            </div>
                             <div class="search-content">
                                 <h3 class="product-name">Hôtel les Mouettes</h3>
                                 <p class="product-cost">Nuit à partir de <span>76€</span></p>
@@ -164,11 +177,15 @@
                                     <i class="fas fa-star"></i>
                                 </span>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#" class="clickable-search-card" id="clickable-search-card">
-                        <div class="card" id="search-cards">
-                            <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                        </a>
+                    </div>
+
+
+                    <div class="search-card">
+                        <a href="#" class="clickable-search-card">
+                            <div class="search-img-container">
+                                <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                            </div>
                             <div class="search-content">
                                 <h3 class="product-name">Hôtel de la mer</h3>
                                 <p class="product-cost">Nuit à partir de <span>25€</span></p>
@@ -180,11 +197,15 @@
                                     <i class="fas fa-star"></i>
                                 </span>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#" class="clickable-search-card" id="clickable-search-card">
-                        <div class="card" id="search-cards">
-                            <img src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                        </a>
+                    </div>
+
+
+                    <div class="search-card">
+                        <a href="#" class="clickable-search-card">
+                            <div class="search-img-container">
+                                <img src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                            </div>
                             <div class="search-content">
                                 <h3 class="product-name">Auberge Le Panier</h3>
                                 <p class="product-cost">Nuit à partir de <span>52€</span></p>
@@ -196,11 +217,15 @@
                                     <i class="fas fa-star"></i>
                                 </span>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#" class="clickable-search-card" id="clickable-search-card">
-                        <div class="card" id="search-cards">
-                            <img src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                        </a>
+                    </div>
+
+
+                    <div class="search-card">
+                        <a href="#" class="clickable-search-card">
+                            <div class="search-img-container">
+                                <img src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                            </div>
                             <div class="search-content">
                                 <h3 class="product-name">Hôtel chez Amina</h3>
                                 <p class="product-cost">Nuit à partir de <span>76€</span></p>
@@ -212,8 +237,9 @@
                                     <i class="fas fa-star"></i>
                                 </span>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
                 </div>
                 <div class="more-results">
                     <h4>Afficher plus</h4>
@@ -232,15 +258,15 @@
             </div>
 
             <div class="trending-product-container">
-                <a href="#" class="clickable-trending-card" id="clickable-trending-card">
-                    <div class="card" id="trending-cards">
+                <div class="trending-cards">
+                    <a href="#" class="clickable-trending-card">
                         <div class="img-container">
                             <img class="trending-img"
                                 src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                         </div>
                         <div class="trending-content">
-                            <h3 class="product-name">Hôtel chez Amina</h3>
-                            <p class="product-cost">Nuit à partir de <span>76€</span></p>
+                            <h3 class="product-name">Hôtel Le soleil du matin</h3>
+                            <p class="product-cost">Nuit à partir de <span>128€</span></p>
                             <span class="">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -249,10 +275,11 @@
                                 <i class="fas fa-star"></i>
                             </span>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="clickable-trending-card" id="clickable-trending-card">
-                    <div class="card" id="trending-cards">
+                    </a>
+                </div>
+
+                <div class="trending-cards">
+                    <a href="#" class="clickable-trending-card">
                         <div class="img-container">
                             <img class="trending-img"
                                 src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
@@ -268,8 +295,9 @@
                                 <i class="fas fa-star"></i>
                             </span>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+
                 <a href="#" class="clickable-trending-card" id="clickable-trending-card">
                     <div class="card" id="trending-cards">
                         <div class="img-container">

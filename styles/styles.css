@@ -104,7 +104,7 @@ input[type=search] {
 
 .search-button>span {
     display: flex;
-    font-weight: 500 bold;
+    font-weight: 500;
     padding: .54em;
     color: #f2f2f2;
 }
@@ -363,7 +363,7 @@ aside {
 }
 
 .trending-content>span {
-    flex: flex;
+    display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     color: #0065fc;
@@ -453,7 +453,7 @@ aside {
     margin: 0;
     background-image: url(/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
     background-position: center bottom;
     border-radius: 15px 15px 0 0;
 }
@@ -677,6 +677,6 @@ footer {
     .col-2>h4,
     .col-3>h4 {
 
-        margin: 1.5em 1.5em em 0;
+        margin: 1.5em 1.5em 0 0;
     }
 }
