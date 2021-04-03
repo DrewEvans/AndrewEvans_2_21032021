@@ -174,7 +174,7 @@ input[type=search] {
     background-color: white;
 }
 
-.filter>span {}
+
 
 
 .infos {
@@ -211,7 +211,7 @@ input[type=search] {
     color: #0065fc;
 }
 
-main {}
+
 
 section {
     display: inline-flex;
@@ -455,7 +455,7 @@ article {
 
 .small-card-container {
     display: flex;
-    align-items: space-between;
+    //
     height: 350px;
 }
 
@@ -727,5 +727,4 @@ footer {
         align-self: flex-start;
         justify-self: self-start;
     }
-
 }
